@@ -73,12 +73,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-section {
-    height: 800px;
-}
 .main {
     padding: 120px;
+    background-color: white;
 }
 
 .recommended {
@@ -123,6 +120,16 @@ section {
     margin: 0;
     font-weight: bold;
 }
+.categories {
+   max-width: 1020px;
+   margin: 0 auto;
+   margin-bottom: 120px;
+}
+.category__photos {
+    display: flex;
+    gap:3%;
+    margin-bottom: 16px;
+}
 .categories__title {
     margin-top: 0;
     margin-bottom: 64px;
@@ -133,11 +140,58 @@ section {
     letter-spacing: -1.5px;
 }
 
+.category {
+    margin-bottom: 64px;
+}
+.category__title {
+    margin: 0;
+}
+.photo-wide {
+    width: 65%;
+}
+
+.photo-square {
+    width: 32%;
+}
+
+.how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+}
 .how-to-buy__title {
+    flex-basis: 50%;
     margin-top: 0;
     margin-bottom: 64px;
     font-size: 48px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -1.5px;
+}
+
+.how-to-buy__content {
+    flex-basis: 50%;
+}
+
+.how-to-buy__benefits {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
